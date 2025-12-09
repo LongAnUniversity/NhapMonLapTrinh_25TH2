@@ -129,7 +129,24 @@ void cau11() {
     if (timthay == false)
         cout << "Khong tim thay phuong an phu hop" << endl;
 }
+void cau12() {
+    for (int ga = 0; ga <= 36; ga++) {
+		int cho = 36 - ga;
+        if (2 * ga + 4 * cho == 100) {
+			cout << "So ga: " << ga << ", So cho: " << cho << endl;
+        }
+    }
+}
+
+int tong(int a, int b) {
+    return a + b;
+}
+int tong(int a, int b, int c) {
+    return a + b + c;
+}
+
 int main()
 {
-    cau11();
+    int x = tong(2, 3);
+	int y = tong(2, 3, 4);
 }
